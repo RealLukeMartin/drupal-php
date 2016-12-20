@@ -1,5 +1,5 @@
 FROM alpine:edge
-MAINTAINER Wodby <admin@wodby.com>
+MAINTAINER Luke Martin <luke@poeticsystems.com>
 
 # Install packages
 RUN echo 'http://alpine.gliderlabs.com/alpine/edge/main' > /etc/apk/repositories && \
