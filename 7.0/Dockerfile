@@ -173,6 +173,6 @@ RUN composer global require hirak/prestissimo:^0.3 --optimize-autoloader && \
     drupal init --override
 
 USER root
-RUN composer create-project drupal-composer/drupal-project:8.x-dev html --stability dev --no-interaction
+RUN composer create-project drupal-composer/drupal-project:8.x-dev /var/www/html --stability dev --no-interaction
 COPY docker-entrypoint.sh /usr/local/bin/
 CMD docker-entrypoint.sh
